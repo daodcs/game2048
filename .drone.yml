@@ -3,6 +3,6 @@ name: default
 
 steps:
 - name: build
-  image: busybox
+  image: python
   commands:
-  - echo "你 好"
+  - pip install neovim
