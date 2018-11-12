@@ -2,7 +2,12 @@ kind: pipeline
 name: default
 
 steps:
-- name: build
+- name: python
   image: python
   commands:
   - pip install neovim
+
+- name: node
+  image: node
+  commands:
+  - npm install node-sass
