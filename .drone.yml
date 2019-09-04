@@ -7,7 +7,7 @@ steps:
   commands:
   - pip install neovim
 
-- name: captains-log
+captains-log:
   image: target/captains-log:1
   pull: true
   secrets:
