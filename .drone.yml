@@ -2,12 +2,8 @@ kind: pipeline
 name: default
 
 steps:
-- name: python
-  image: python
-  commands:
-  - pip install neovim
 
-captains-log:
+- name: captains-log
   image: target/captains-log:1
   pull: true
   secrets:
